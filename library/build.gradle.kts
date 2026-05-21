@@ -43,7 +43,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.Hiaashuu.daddychill"
                 artifactId = "appinfo"
-                version = "1.0.3"
+                version = "1.0.4"
             }
         }
     }
