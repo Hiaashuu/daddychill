@@ -36,9 +36,6 @@ android {
     }
 }
 
-// FIX: afterEvaluate must be at top level, NOT nested inside register<MavenPublication>.
-// Nesting it inside caused the "release" component to be unresolved at configuration time,
-// which broke the JitPack publish task and made the library impossible to consume.
 afterEvaluate {
     publishing {
         publications {
