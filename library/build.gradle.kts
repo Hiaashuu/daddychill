@@ -39,7 +39,8 @@ android {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.hiaashuu"
+            // Updated to strictly match JitPack's coordinate system
+            groupId = "com.github.Hiaashuu.daddychill"
             artifactId = "appinfo"
             version = "1.0.0"
 
