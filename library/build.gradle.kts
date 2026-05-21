@@ -36,16 +36,17 @@ android {
     }
 }
 
-publishing {
-    publications {
-        register<MavenPublication>("release") {
-            // Updated to strictly match JitPack's coordinate system
-            groupId = "com.github.Hiaashuu.daddychill"
-            artifactId = "appinfo"
-            version = "1.0.0"
-
-            afterEvaluate {
+// FIX: afterEvaluate must be at top level, NOT nested inside register<MavenPublication>.
+// Nesting it inside caused the "release" component to be unresolved at configuration time,
+// which broke the JitPack publish task and made the library impossible to consume.
+afterEvaluate {
+    publishing {
+        publications {
+            register<MavenPublication>("release") {
                 from(components["release"])
+                groupId = "com.github.Hiaashuu.daddychill"
+                artifactId = "appinfo"
+                version = "1.0.1"
             }
         }
     }
