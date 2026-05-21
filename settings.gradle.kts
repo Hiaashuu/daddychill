@@ -11,6 +11,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // FIX: JitPack was missing. Without this, no project — including this one
+        // and any app trying to consume the library — can resolve it from JitPack.
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
