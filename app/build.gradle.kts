@@ -19,11 +19,11 @@ android {
     defaultConfig {
         applicationId = "com.hiaashuu.daddychill"
         minSdk = 21
-        targetSdk = 34
+        // FIX: targetSdk must match compileSdk (was 34, compileSdk was 36 — mismatch)
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
-
 
     signingConfigs {
         create("release") {
@@ -47,10 +47,9 @@ android {
 
         debug {
             isMinifyEnabled = false
-        signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
-
 
     buildFeatures {
         viewBinding = true
@@ -60,6 +59,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlin {
         compilerOptions {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.fromTarget("17"))
@@ -68,6 +68,10 @@ android {
 }
 
 dependencies {
+    // FIX: The app module had zero reference to the library — it could not see any
+    // of the AppInfoLibrary APIs. Added the local module dependency.
+    implementation(project(":library"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
