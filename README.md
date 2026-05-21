@@ -72,7 +72,7 @@ In your app module's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.Hiaashuu:daddychill:1.0.0")
+    implementation("com.github.Hiaashuu:daddychill:1.0.2")
 }
 ```
 
@@ -80,7 +80,7 @@ Or Groovy:
 
 ```groovy
 dependencies {
-    implementation 'com.github.Hiaashuu:daddychill:1.0.0'
+    implementation 'com.github.Hiaashuu:daddychill:1.0.2'
 }
 ```
 
