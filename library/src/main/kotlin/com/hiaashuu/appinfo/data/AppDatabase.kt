@@ -1998,7 +1998,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.accessory",
                     appName = "Quick Connect",
                     purpose = "Connects OnePlus devices to HeyTap ecosystem: smart home devices, wearables, and cross-device file sharing.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2020,7 +2020,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.browser",
                     appName = "Internet (HeyTap Browser)",
                     purpose = "ColorOS/HeyTap stock web browser with ad-blocking, video download, and cloud sync.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.BLOATWARE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2043,7 +2043,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.cloud",
                     appName = "HeyTap Cloud",
                     purpose = "OnePlus/ColorOS cloud backup: contacts, photos, notes, settings, and app data sync to HeyTap servers.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.CAUTION,
                     removalStatus = RemovalStatus.CAUTION,
                     keyPermissions = listOf(
@@ -2067,7 +2067,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.colorfulengine",
                     appName = "Colorful Engine",
                     purpose = "Visual effects engine for ColorOS: dynamic wallpapers, theme animations, and UI transitions.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.CRITICAL,
                     removalStatus = RemovalStatus.NO,
                     keyPermissions = listOf(
@@ -2085,7 +2085,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.htms",
                     appName = "HTMS",
                     purpose = "HeyTap Membership Service: manages HeyTap account, rewards, subscriptions, and promotional content.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2105,7 +2105,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.market",
                     appName = "HeyTap Market",
                     purpose = "HeyTap/OPPO app store: alternative to Play Store for regional apps, games, and OnePlus-exclusive content.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.BLOATWARE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2127,7 +2127,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.market.overlay",
                     appName = "HeyTap Market Overlay",
                     purpose = "Resource overlay for HeyTap Market UI: theming, carrier configs, and regional customizations.",
-                    category = AppCategory.HEYTAP_NEARMEE,                    safetyLevel = SafetyLevel.SAFE,
+                    category = AppCategory.HEYTAP_NEARME,                    safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = emptyList(),
                     impactIfDisabled = "HeyTap Market UI may revert to defaults; functionality unchanged.",
@@ -2141,7 +2141,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.mcs",
                     appName = "System Messages",
                     purpose = "HeyTap push notification service: delivers system alerts, promotional messages, and app notifications via HeyTap servers.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2163,7 +2163,7 @@ internal object AppDatabase {
                     packageName = "com.heytap.mydevices",
                     appName = "My Devices",
                     purpose = "HeyTap ecosystem device manager: tracks connected wearables, earbuds, and smart home devices; shows battery status and firmware updates.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
@@ -2184,7 +2184,7 @@ internal object AppDatabase {
                     packageName = "com.nearme.instant.platform",
                     appName = "InstantWeb Service Framework",
                     purpose = "Lightweight app framework for instant apps and mini-programs: runs web-based apps without full installation.",
-                    category = AppCategory.HEYTAP_NEARMEE,
+                    category = AppCategory.HEYTAP_NEARME,
                     safetyLevel = SafetyLevel.SAFE,
                     removalStatus = RemovalStatus.YES,
                     keyPermissions = listOf(
